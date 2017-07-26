@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+	<head>
+		<title>APK-VOLEY</title>
+		<link id="favicon" rel="shortcut icon" href="img/favicon.ico"><!-- Icono Navegador-->
+		<!-- Metas -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="author" content="Navbarsolution" />
+		<meta name="classification" content="voleibol, voley, voley pista, rafael altamira" />
+		<meta name="description" content="Aplicación para llevar la gestion de un club" />
+		<meta name="keywords" content="voleibol,voley,fvbcv,fevb" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--CSS's -->
+		<link id="css" rel="stylesheet" href="css/style.css" /><!-- Estilo del Login-->
+		<link id="css" rel="stylesheet" href="css/style2.css" /><!-- Estilo de la apk-->
+		
+		<!--Script's-->
+		<script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="lib/lib-bbdd.js"></script>
+		<script type="text/javascript" src="lib/lib-apk.js"></script>
+	</head>
+	
+	<body>
+		<!--PAGINA DEL LOGIN-->
+		<div id="login">
+			<div id="logo">
+				<img src="img/logov2.png"></img>
+			</div>
+			<div id="form">
+				<div id="quest">
+					<p style="font-size: 25px; margin: 15px 0;">Por favor inicia sesión</p>
+					<input id="user" class="sampletext" name="login" type="text" required="required" maxlength="150" placeholder="Email" > </br />
+					<input id="pass" class="sampletext" name="pass" type="password" required="required" maxlength="150" placeholder="Contraseña" ><br />
+					<input id="inicioS" type="submit" value="Iniciar sesión" onclick="checkUser($('#user').val(), $('#pass').val());">
+				</div>
+				
+				<div class="clear"></div>
+				
+				<div id="passRecu">
+					<span style="color: #606060; font-size: 21px; margin-bottom: 10px;">¿Olvidaste tu contraseña?</span><br />
+					<span style="margin: 10px;"><a href="#">Click aqui</a> para reiniciar tu contraseña.</span>
+				</div>
+			</div>
+						
+			<div id="copyright">
+				<span>Copyright © 2015, navbarsolution <br> Todos los derechos reservados.</span>
+			</div>
+		</div>
+		
+		<!--PAGINA DE CONTENIDOS-->
+		<div id="main">
+			<nav>
+			<div id="menuNav">
+				<div id="log">
+						
+				</div>
+				<div id="list">
+					<ul>
+						<li class="home"><img src="img/icon/home96.png" />Inicio</li>
+						<li class="dashboard"><img src="img/icon/dashboard96.png" />Panel</li>
+						<hr>
+						<li class="team"><img src="img/icon/team96.png" />Equipos</li>
+						<li class="player2"><img src="img/icon/player96.png" />Jugadores</li>
+						<li class="assist"><img src="img/icon/assist96.png" />Asistencia</li>
+						<li class="calendar"><img src="img/icon/saturday96.png" />Calendario</li>
+						<hr>
+						<li class="config"><img src="img/icon/config96.png" />Configuración</li>
+						<li class="user"><img src="img/icon/user96.png" />Cuenta de Usuario</li>
+						<li class="logout"><img src="img/icon/logout96.png" />LogOut</li>
+					</ul>
+				</div>
+			</div>
+			<div id="whiteCap"></div>
+			</nav>
+			<div id="blackCap"></div>
+			
+			<header>
+				<div id="bar">
+					<img id="menuOption" src="img/icon/menu-alt.png" />
+					<p id="menuTitle">Rafael Altamira</p>
+				</div>
+			</header>
+			<div id="content"></div>
+			<div class="clear"></div>
+			<footer>
+				Copyright © 2015, navbarsolution <br>
+				Todos los derechos reservados.
+			</footer>
+		</div>
+	</body>
+</html>

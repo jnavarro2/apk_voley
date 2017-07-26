@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "OpenSans-CondLight";
+  src: url("../font/opensans-condlight-webfont.eot");
+}
+@font-face {
+  font-family: "OpenSans-CondLight";
+  src: url("../font/OpenSans-CondLight.ttf");
+}
+body{font-family: OpenSans-CondLight; margin:0; height: auto; background: url('../img/main-bg.png');}
+div.clear {clear:both;}
+
+/*HEADER*/
+header{width: 100%; height: 52px; background:rgba(255, 255, 255, 0.75); position:fixed; top: 0; z-index: 9;}
+header #bar{margin: 0 auto; text-align:center;}
+header img{margin: 10px; float:left;}
+#menuTitle {width:200px; color: black; font-size: 30px; font-weight: bolder; margin: 0 auto; padding-top: 5px;}
+
+/*NAVBAR*/
+nav{width: 100%; height: 100%; position: fixed; left: -100%; z-index: 10; top: 0;}
+nav #menuNav{width: 75%; height: 100%; background: white; float: left; overflow: auto;}
+nav #whiteCap{width: 25%; height: 100%; float: left;}
+#blackCap{width: 100%; height: 100%; position: fixed; top: 0; background:rgba(0, 0, 0, 0.65); z-index: 1; display: none;}
+#log{width: 100%; height: auto; padding-bottom: 1px; background: silver url('../img/fondoLogAzul.png'); background-size: 100% 100%; background-repeat: no-repeat;}
+#log #user{border-radius:50px; width: 60px; height: 60px; margin: 12px; background:rgba(255, 255, 255, 0.75);}
+#log .span{margin-left: 15px; color: white; font-size: 18px;}
+#log #userName{font-weight: bold;font-size: 20px;}
+#log #userEmail{margin-bottom: 10px;}
+#list ul{padding: 0px; margin: 10px 0;}
+#list ul li{list-style-type: none; font-size: 16px; font-weight: bold; margin-left: 20px; margin-bottom: 10px; cursor: pointer;}
+#list ul li img{margin-right: 20px; vertical-align: middle; width: 32px; height: 32px;}
+
+/*ARTICLE*/
+#content{width: 100%; height: auto; float:left; margin-top: 52px; padding-top: 15px; overflow: auto;}
+article{background:rgba(255, 255, 255, 0.25) url('../img/fondoLog2.png'); background-size: 100% 100%; background-repeat: no-repeat; margin-bottom: 15px; padding: 15px;}
+article .title{font-weight: bold;}
+article p{margin: 5px 0;}
+
+/*FOOTER*/
+footer{width: 100%; float:left; color: white; text-align: center; margin: 15px 0px;}
+#footer{width: 100%; float:left; color: white; text-align: center; margin: 15px 0px;}
+
+/*DASHBOARD*/
+#dashboard{margin: 0 auto;}
+#dashboard div{float:left; width: 33%; margin: 0 auto; border-radius: 15px; cursor: pointer; text-align: center; color: white; font-weight: bold;}
+#dashboard div img{display: block; margin-left: auto; margin-right: auto; width: auto; height: auto;}
+#dashboard div.fairPlay img{width: 76px; height: 76px; padding: 10px; border-radius: 22px;}
+
+/*TEAM*/
+#team .buttonRadio{position: fixed; top: 85%; right: 5%; width: 68px; height: 65px; border-radius: 50px; box-shadow: 4px 4px 5px #000000; background: #e74c3c;}
+#team .buttonRadio img{width: 60px; height: auto;}
+.infoTeam{float:left;}
+.dataTeam{float:right; font-weight: bolder; text-align: center;}
+.act{color: green; width: 70px; background:rgba(192, 192, 192, 0.9); margin: 10px 10px; padding: 12px; border-left: 4px solid green;}
+.del{color: red; width: 70px; background:rgba(192, 192, 192, 0.9); margin: 10px 10px; padding: 12px; border-left: 4px solid red;}
+
+/*PLAYER*/
+#playerTeam{width: 100%; height: auto; position: relative; right: 0%; z-index: 2; top: 0; overflow: auto;}
+#playerTeam .title{float:left; font-size: 30px; font-variant:small-caps;}
+.next{float: right; width: 50px;}
+
+#playerPlayers{width: 100%; height: 88%; position: fixed; right: -100%; z-index: 2; top: 52px; overflow: auto; padding-top:15px;}
+#playerPlayers .buttonRadio{position: fixed; top: 85%; right: 5%; width: 68px; height: 65px; border-radius: 50px; box-shadow: 4px 4px 5px #000000; background: #e74c3c; display:none;}
+#playerPlayers .buttonRadio img{width: 50px; height: auto; margin: 6px;}
+.infoNameTeam{background:rgba(192, 192, 192, 0.9); width: 100%; text-align: center;}
+.infoNameTeam .back{float: left; width: 50px; margin: 10px;}
+.infoNameTeam .title{font-size: 35px; font-variant:small-caps; margin: 0 auto; font-weight: bold; padding-top: 10px;}
+.listPlayer .next{margin-top: 30px;}
+#playerPlayers .imgPlayer{height: 100px; float:left;}
+#playerPlayers .infoPlayer{float: left; font-size: 25px; margin: 10px 0 10px 20px; font-weight: bold;}
+
+#player{width: 100%; height: 88%; position: fixed; right: -100%; z-index: 2; top: 52px; overflow: auto; padding-top:15px;}
+#player img{width: 88px; float: left;}
+#player .namePlayer{float: left; font-size: 35px; margin: 20px;}
+#player .descPlayer{width: 98%; margin-top: 10px; padding: 10px 0 10px 10px; float: left; font-size: 25px; background:rgba(192, 192, 192, 0.5);}
+#player .descPlayer span{font-weight: bold;}
+#player .buttonPlayer{width: 95%; float: left; font-size: 25px; text-align: center; }
+#player .buttonPlayer div{width: 98%; margin: 10px 0; background: silver; padding: 10px;}
+#player .buttonPlayer .back{border-left: 8px solid orange;}
+#player .buttonPlayer .update{border-left: 8px solid green;}
+#player .buttonPlayer .delete{border-left: 8px solid red;}
+
+/*ASSIST*/
+#assistTeam{width: 100%; height: auto; position: relative; right: 0%; z-index: 2; top: 0; overflow: auto;}
+#assistTeam .title{float:left; font-size: 30px; font-variant:small-caps;}
+.next{float: right; width: 50px;}
+
+/*
+#assistPlayers{width: 100%; height: 88%; position: fixed; right: -100%; z-index: 2; top: 52px; overflow: auto; padding-top:15px;}
+#assistPlayers .buttonRadio{position: fixed; top: 85%; right: 5%; width: 68px; height: 65px; border-radius: 50px; box-shadow: 4px 4px 5px #000000; background: #e74c3c; display:none;}
+#assistPlayers .buttonRadio img{width: 50px; height: auto; margin: 6px;}
+#assistPlayers .infoPlayer{float:left; width: 40%; margin: 18px 0px 18px 8px; font-size: 22px; font-weight: bold;}
+#assistPlayers .imgPlayer{height: 90px; float:left;}
+.control{float: right;}
+.asist{color: green; width: 70px; background:rgba(192, 192, 192, 0.9); margin: 10px 10px; padding: 6px 12px; border-left: 4px solid green;}
+.foul{color: #800000; width: 70px; background:rgba(192, 192, 192, 0.9); margin: 10px 10px; padding: 6px 12px; border-left: 4px solid #800000;}
+.foul:active{color: silver; width: 70px; background:rgba(128, 0, 0, 0.9); margin: 10px 10px; padding: 6px 12px; border-left: 4px solid silver;}
+.asist:active{color: silver; width: 70px; background:rgba(0, 128, 0, 0.9); margin: 10px 10px; padding: 6px 12px; border-left: 4px solid silver;}
+*/
+
+#assistPlayers{width: 100%; height: 88%; position: fixed; right: -100%; z-index: 2; top: 52px; overflow: auto; padding-top:15px;}
+#assistPlayers article{padding: 0px; background: none;}
+#assistPlayers .listPlayer{float:left; width: 33%; margin: 0 auto; border-radius: 15px; cursor: pointer; text-align: center; color: white; font-weight: bold;}
+#assistPlayers .imgPlayer{display: block; margin-left: auto; margin-right: auto; margin-top: 10px; width: 76px; height: 76px; padding: 10px; border-radius: 22px; background:rgba(192, 192, 192, 0.5);}
+#assistPlayers .buttonRadio{position: fixed; top: 85%; right: 5%; width: 68px; height: 65px; border-radius: 50px; box-shadow: 4px 4px 5px #000000; background: #e74c3c; display:none;}
+#assistPlayers .buttonRadio img{width: 50px; height: auto; margin: 6px;}
+#assistPlayers .check{background:rgba(0, 128, 0, 0.5);}
+#assistPlayers .dblCheck{background:rgba(128, 0, 0, 0.5);}
+#assistMSG{width: 100%; height: auto; position: fixed; top: 40%; z-index: 12; overflow: auto; padding:15px; background:rgba(192, 192, 192, 0.9);box-shadow: 4px 4px 5px #000000;}
+#sendDatos{width: 100%; height: auto; padding: 15px; margin-top: 15px;}
+#blackCap2{width: 100%; height: 100%; position: fixed; top: 0; background:rgba(0, 0, 0, 0.65); z-index: 11; display: none;}
+
+@media all and (orientation:landscape) {
+	/*NAVBAR*/
+	nav{width: 100%; height: 100%; position: fixed; left: -100%; z-index: 10; top: 0;}
+	nav #menuNav{width: 45%; height: 100%; background: white; float: left; overflow: auto;}
+	nav #whiteCap{width: 55%; height: 100%; float: left;}
+	#blackCap{width: 100%; height: 100%; position: fixed; top: 0; background:rgba(0, 0, 0, 0.65); z-index: 1; display: none;}
+	#log{width: 100%; height: auto;padding-bottom: 1px; background: silver url('../img/fondoLogAzul.png'); background-size: 100% 100%;background-repeat: no-repeat;}
+	#log #user{border-radius:50px; width: 75px; height: 75px; margin: 12px;}
+	#list ul{padding: 0px;}
+	#list ul li{llist-style-type: none; font-size: 16px; font-weight: bold; margin-left: 20px; margin-bottom: 10px; cursor: pointer;}
+	
+	/*ARTICLE*/
+	#content{width: 100%; height: auto; float:left; margin-top: 52px; padding-top: 15px; overflow: auto;}
+	article{background:rgba(255, 255, 255, 0.25) url('../img/fondoLog2.png'); background-size: 50% 100%; background-repeat: no-repeat; background-position: right; margin-bottom: 15px;}
+	article .title{font-weight: bold;}
+	article p{margin: 5px 0;}
+	
+	/*ASSISTPLAYERS*/
+	#assistPlayers .listPlayer{float:left; width: 20%; margin: 0 auto; border-radius: 15px; cursor: pointer; text-align: center; color: white; font-weight: bold;}
+	
+	
+}

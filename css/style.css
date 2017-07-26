@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "OpenSans-CondLight";
+  src: url("../font/opensans-condlight-webfont.eot");
+}
+@font-face {
+  font-family: "OpenSans-CondLight";
+  src: url("../font/OpenSans-CondLight.ttf");
+}
+body{font-family: OpenSans-CondLight; margin:0; height: auto; background: url('../img/main-bg.png');}
+div.clear {clear:both;}
+
+#login{width: 90%; height: auto; margin: 0 auto; display: block;}
+#main{display: none;}
+#logo{width: 100%; height: auto;}
+#logo img{height: auto; margin: 0 auto; display: block;}
+#form{background: rgb(255, 255, 255); box-shadow: 15px 5px 15px #000000; margin: 0 auto; display: block;}
+#form p{margin-top: 0px !important; text-align: center;}
+#copyright{text-align: center; color: white; margin: 10px 0;}
+#passRecu{text-align: center; border-top: 1px solid silver; padding-top: 10px;}
+.alert{
+	background: rgba(255, 0, 0, 0.95);
+	font-family: OpenSans-CondLight;
+	padding: 25px;
+	margin: 0 auto;
+	position: absolute;
+	top: 40%;
+	left: 37%;
+	border-radius: 15px;
+	/*display:none;*/
+	box-shadow: 0px 5px 15px #000000;
+	text-align: center;
+	font-weight: bold;
+}
+.sampletext:focus{background:rgba(255, 255, 153, 0.55); color: grey;}
+
+/*PANTALLA MAYORES DE 855 (PC, TABLETS GRANDES)*/
+@media screen and (min-width:855px){
+	#logo img{width: 180px;}
+	#form{width: 320px; padding: 15px;}
+	#form #quest{padding: 0px 25px 0px 25px;}
+	.sampletext{
+		color: white;
+		width: 100%; height: 40px; 
+		border: 0px; 
+		margin-bottom: 10px; text-align: center;
+		background:rgba(55, 55, 55, 0.55);
+		border: solid 1px green;
+		border-left: solid 5px green;
+		font-size: 18px;
+	}
+	.sampletext#user{
+		background-position: left center;
+		background-image: url(../img/icon/user2.png);
+		background-repeat: no-repeat;
+	}
+	.sampletext#pass{
+		background-position: left center;
+		background-image: url(../img/icon/lock2.png);
+		background-repeat: no-repeat;
+	}
+	#inicioS{
+		width: 150px; height: 40px; border: 0px; 
+		background: rgba(255,0,0,0.95); 
+		margin: 0 auto; display: block; 
+		margin-bottom: 15px; color: white;
+	}
+	input#inicioS{
+		background-position: right center;
+		background-image: url(../img/icon/initS3.png);
+		background-repeat: no-repeat;
+	}
+	
+	.alert{width: 300px;}
+}
+/*PANTALLA MENORES DE 855 (SMARTPHONE, TABLETS MEDIANAS Y PEQUEÑAS)*/
+@media screen and (max-width:854px){
+	#logo img{width: 170px;}
+	#form{padding: 15px 0;}
+	.sampletext{
+		color: white;
+		width: 100%; height: 50px; 
+		border: 0px; 
+		margin-bottom: 10px; text-align: center;
+		background:rgba(55, 55, 55, 0.55);
+		border-top: 1px solid green;
+		border-bottom: 1px solid green;
+		font-size: 18px;
+	}
+	.sampletext#user{
+		background-position: left center;
+		background-image: url(../img/icon/user2.png);
+		background-repeat: no-repeat;
+	}
+	.sampletext#pass{
+		background-position: left center;
+		background-image: url(../img/icon/lock2.png);
+		background-repeat: no-repeat;
+	}
+	#inicioS{
+		width: 145px; height: 50px; border: 0px; 
+		background: rgba(255,0,0,0.95); 
+		margin: 0 auto; display: block; 
+		margin-bottom: 15px; color: white;
+		font-weight: bold;
+	}
+	input#inicioS{
+		background-position: right center;
+		background-image: url(../img/icon/initS3.png);
+		background-repeat: no-repeat;
+	}
+	.alert{width: 90%; height: auto; border-radius: 0px; left: 0%; padding: 14px 5%;}
+	.alert .msg{width: 260px; height: auto; margin: 0 auto;}
+	.alert button{height: 45px; width: 180px;}
+}
+
