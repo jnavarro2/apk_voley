@@ -3,7 +3,7 @@
 
 FUNCIONES ESPECIFICAS:
 + Mandar Email(php): mail(to,subject,message,headers,parameters);
-+ Seleccionar Camara(html5): <input accept="image/*"  type="file" capture/>
++ Seleccionar Camara(html5): "<input accept="image/*"  type="file" capture/>"
 
 20170726 apk-voley v1.0.0
 + Comprobación y creación de la base de datos
